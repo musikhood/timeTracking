@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap')
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+::root
+    font-size: 18px
+body
+    background-color: hsl(226, 43%, 10%)
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 100vh
+.main
+    background-color: hsl(226, 43%, 10%)
+    min-height: 100vh
+    padding: 40px 0
+    font-family: 'Rubik'
+    font-size: 18px
+    z-index: 100
+    display: flex
+    flex-direction: column
+    @media (min-width: 1440px)
+        flex-direction: row
+        min-height: 600px
+        width: 1200px
+    &__others
+        display: flex
+        flex-direction: column
+        @media (min-width: 1440px)
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-evenly
+            align-content: space-between
+            min-height: 550px
+    &__about
+        width: 90%
+        margin: 0 auto 20px auto
+        background-color: hsl(235, 46%, 20%)
+        border-radius: 15px
+        @media (min-width: 1440px)
+            width: 30%
+            min-height: 550px
+            margin: 0 auto
+
+    &__jeremy
+        width: 100%
+        display: flex
+        align-items: center
+        padding: 1.5rem
+        background-color: hsl(240, 80%, 60%)
+        border-radius: 15px
+        @media (min-width: 1440px)
+            flex-direction: column
+            align-items: flex-start
+            height: 70%
+
+    &__img-wrapper
+        width: 20%
+
+        margin-right: 2rem
+        @media (min-width: 1440px)
+            width: 100px
+    &__img
+        width: 100%
+        border-radius: 50%
+        border: 3px solid white
+
+    &__about-wrapper
+        flex-grow: 1
+        line-height: 2rem
+        @media (min-width: 1440px)
+            display: flex
+            flex-direction: column
+            justify-content: center
+    &__p
+        font-weight: 500
+        color: hsl(236, 100%, 87%)
+        @media (min-width: 1440px)
+            font-size: 1.5rem
+        &--set-time
+            font-weight: 400
+            font-size: 1.2rem
+            cursor: pointer
+            &:hover
+                color: #e9e9e9
+            &.active
+                color: white
+    &__h2
+        font-weight: 300
+        color: hsl(236, 100%, 87%)
+        @media (min-width: 1440px)
+            font-size: 3rem
+            line-height: 3rem
+    &__set-time
+        display: flex
+        justify-content: space-evenly
+        padding: 1.5rem 0
+        @media (min-width: 1440px)
+            flex-direction: column
+            padding: 1.5rem
+            height: 30%
+.statistics
+    width: 90%
+    margin: 20px auto
+    background-color: hsl(15, 100%, 70%)
+    border-radius: 25px
+    @media (min-width: 1440px)
+        width: 26%
+        margin: 0
+    &--play
+        background-color: hsl(195, 74%, 62%)
+    &--study
+        background-color: hsl(348, 100%, 68%)
+    &--exercise
+        background-color: hsl(145, 58%, 55%)
+    &--social
+        background-color: hsl(264, 64%, 52%)
+    &--self-care
+        background-color: hsl(43, 84%, 65%)
+    &__img
+        height: 2.5em
+        overflow: hidden
+        width: 20%
+        margin: 0 20px 0 auto
+        text-align: right
+        & img
+            max-width: 100%
+            margin-top: -10px
+            @media (min-width: 1440px)
+                margin-top: 0
+    &__stats
+        width: 100%
+        background-color: hsl(235, 46%, 20%)
+        padding: 2.5rem
+        border-radius: 15px
+        display: flex
+        align-items: center
+        line-height: 2.5rem
+        @media (min-width: 1440px)
+            flex-direction: column
+            align-items: flex-start
+            position: relative
+
+    &__1
+        color: white
+    &__p
+        font-weight: 500
+        font-size: 1.3rem
+    &__h1
+        font-weight: 300
+        font-size: 2.5rem
+    &__2
+        flex-grow: 1
+        text-align: right
+        color: hsl(236, 100%, 87%)
+    &__menu
+        font-size: 2rem
+        position: relative
+        top: -20px
+        @media (min-width: 1440px)
+            position: absolute
+            right: 30px
+            top: 0
+    &__last-week
+        font-size: 1.1rem

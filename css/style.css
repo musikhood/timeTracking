@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::root {
+  font-size: 18px;
+}
+
+body {
+  background-color: #0f1424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  background-color: #0f1424;
+  min-height: 100vh;
+  padding: 40px 0;
+  font-family: 'Rubik';
+  font-size: 18px;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1440px) {
+  .main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 600px;
+    width: 1200px;
+  }
+}
+
+.main__others {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1440px) {
+  .main__others {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    min-height: 550px;
+  }
+}
+
+.main__about {
+  width: 90%;
+  margin: 0 auto 20px auto;
+  background-color: #1c1f4a;
+  border-radius: 15px;
+}
+
+@media (min-width: 1440px) {
+  .main__about {
+    width: 30%;
+    min-height: 550px;
+    margin: 0 auto;
+  }
+}
+
+.main__jeremy {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+  background-color: #4747eb;
+  border-radius: 15px;
+}
+
+@media (min-width: 1440px) {
+  .main__jeremy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 70%;
+  }
+}
+
+.main__img-wrapper {
+  width: 20%;
+  margin-right: 2rem;
+}
+
+@media (min-width: 1440px) {
+  .main__img-wrapper {
+    width: 100px;
+  }
+}
+
+.main__img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.main__about-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  line-height: 2rem;
+}
+
+@media (min-width: 1440px) {
+  .main__about-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.main__p {
+  font-weight: 500;
+  color: #bdc1ff;
+}
+
+@media (min-width: 1440px) {
+  .main__p {
+    font-size: 1.5rem;
+  }
+}
+
+.main__p--set-time {
+  font-weight: 400;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.main__p--set-time:hover {
+  color: #e9e9e9;
+}
+
+.main__p--set-time.active {
+  color: white;
+}
+
+.main__h2 {
+  font-weight: 300;
+  color: #bdc1ff;
+}
+
+@media (min-width: 1440px) {
+  .main__h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+.main__set-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1.5rem 0;
+}
+
+@media (min-width: 1440px) {
+  .main__set-time {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1.5rem;
+    height: 30%;
+  }
+}
+
+.statistics {
+  width: 90%;
+  margin: 20px auto;
+  background-color: #ff8c66;
+  border-radius: 25px;
+}
+
+@media (min-width: 1440px) {
+  .statistics {
+    width: 26%;
+    margin: 0;
+  }
+}
+
+.statistics--play {
+  background-color: #56c2e6;
+}
+
+.statistics--study {
+  background-color: #ff5c7c;
+}
+
+.statistics--exercise {
+  background-color: #4acf81;
+}
+
+.statistics--social {
+  background-color: #7536d3;
+}
+
+.statistics--self-care {
+  background-color: #f1c65b;
+}
+
+.statistics__img {
+  height: 2.5em;
+  overflow: hidden;
+  width: 20%;
+  margin: 0 20px 0 auto;
+  text-align: right;
+}
+
+.statistics__img img {
+  max-width: 100%;
+  margin-top: -10px;
+}
+
+@media (min-width: 1440px) {
+  .statistics__img img {
+    margin-top: 0;
+  }
+}
+
+.statistics__stats {
+  width: 100%;
+  background-color: #1c1f4a;
+  padding: 2.5rem;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 1440px) {
+  .statistics__stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+  }
+}
+
+.statistics__1 {
+  color: white;
+}
+
+.statistics__p {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.statistics__h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.statistics__2 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+  color: #bdc1ff;
+}
+
+.statistics__menu {
+  font-size: 2rem;
+  position: relative;
+  top: -20px;
+}
+
+@media (min-width: 1440px) {
+  .statistics__menu {
+    position: absolute;
+    right: 30px;
+    top: 0;
+  }
+}
+
+.statistics__last-week {
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=style.css.map */
